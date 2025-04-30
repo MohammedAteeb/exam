@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        'jdk21'
+        jdk 'jdk21'
     }    
     stages{
         stage("clone repository"){
