@@ -1,8 +1,8 @@
 pipeline{
     agent any
     environment{
-        Java_Home="C:/Program Files/Java/jdk-21"
-        Path="${Java_Home}\\bin;${env.Path}"
+        JAVA_HOME="C:/Program Files/Java/jdk-21"
+        PATH="${JAVA_HOME}\\bin;${env.PATH}"
     }
     stages{
         stage("clone repository"){
