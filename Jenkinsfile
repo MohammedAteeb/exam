@@ -1,10 +1,10 @@
 pipeline{
     agent any
-    Environment{
+    environment{
         Java_Home="C:/Program Files/Java/jdk-21"
         Path="${Java_Home}\\bin;${env.Path}"
     }
-    Stages{
+    stages{
         stage("clone repository"){
             steps{
                 git branch: 'main' , url: 'https://github.com/MohammedAteeb/exam.git'
